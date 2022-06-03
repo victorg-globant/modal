@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main id="main-content" role="main">
+      <button id="open-modal" class="open-modal">Open modal</button>
+    </main>
+    <div
+      id="modal"
+      class="modal hidden"
+      aria-hidden="true"
+      aria-labelledby="modalTitle"
+      aria-describedby="modalDescription"
+      role="dialog"
+    >
+      <div class="modal-content">
+        <div id="modalDescription" class="screen-reader-offscreen">
+          Beginning of dialog. It begins with a heading 1 called &quot;Dialog
+          Window&quot;
+        </div>
+
+        <h1 id="modal-title" tabindex="0">Dialog Window</h1>
+        <p>This is the body of the dialog</p>
+
+        <button id="modal-close" title="Close modal">
+          <!-- <img id="cancel" src="x.png" alt="close the registration form" /> -->
+          Close modal
+        </button>
+      </div>
+    </div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
